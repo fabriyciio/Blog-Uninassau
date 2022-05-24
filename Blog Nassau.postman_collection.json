@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "63b03533-449d-49ca-a458-4903d56e0f68",
+		"name": "Blog Nassau",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20841883"
+	},
+	"item": [
+		{
+			"name": "Buscar Artigos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/blog/artigo/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blog",
+						"artigo",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar artigo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Artigo #1\",\r\n    \"autor\": \"Alex\",\r\n    \"data\": \"07/05/2022\",\r\n    \"texto\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat nulla. Curabitur nec purus ac sem ultrices scelerisque ut ac purus. Donec iaculis, tortor eget fermentum venenatis, metus leo porttitor felis, a lacinia magna neque a libero. Nullam pretium maximus urna ac porta. Donec at risus sed mauris commodo facilisis. Duis bibendum justo a lectus pulvinar, congue fringilla ipsum scelerisque. Curabitur consequat massa non metus maximus rutrum. Nam non convallis mi, vitae luctus leo. Mauris consequat fringilla massa, id dapibus est condimentum in. Aliquam sed est efficitur, porta sem sit amet, vestibulum diam. Nulla congue efficitur metus sit amet commodo. In non ornare leo, venenatis blandit ligula.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/blog/artigo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blog",
+						"artigo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/blog/artigo/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blog",
+						"artigo",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/blog/artigo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blog",
+						"artigo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
